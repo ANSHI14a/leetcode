@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Employee Management System</h1>
+        
+        <div class="admin">
+            <h2>Admin Panel</h2>
+            <input type="text" id="taskInput" placeholder="Enter task">
+            <button onclick="assignTask()">Assign Task</button>
+            <h3>Assigned Tasks:</h3>
+            <ul id="taskListAdmin"></ul>
+        </div>
+
+        <div class="employee">
+            <h2>Employee Panel</h2>
+            <h3>Your Tasks:</h3>
+            <ul id="taskListEmployee"></ul>
+            <h3>Your Rating: <span id="employeeRating">0</span> Stars</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
